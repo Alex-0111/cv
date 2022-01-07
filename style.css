@@ -21,7 +21,7 @@ body{
     text-transform: uppercase;
 }
 
-.semi_bold{
+.semi-bold{
     font-weight: 500;
     font-size: 16px;
 }
@@ -35,7 +35,7 @@ body{
 
 .resume .resume_left{
     width: 280px;
-    background: #0bb5f4;
+    background: rgb(203 203 203 / 82%);
 }
 
 .resume .resume_left .resume_profile{
@@ -56,19 +56,25 @@ body{
 }
 
 .resume .resume_left .bold{
-    color: #fff;
+    color: rgb(38 69 74);
 }
+
 .resume .resume_left .regular{
-    color: #b1eaff;
+    color: rgb(38 69 74);
 }
 
 .resume .resume_item{
     padding: 25px 0;
-    border-bottom: 2px solid #b1eaff;
+    border-bottom: 2px solid rgb(38 69 74);
 }
 
-.resume .resume_left .resume_item:last-child{
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child{
     border-bottom: 0px;
+}
+
+.fa-map-marker-alt:before {
+    color: #d51919;
 }
 
 .resume .resume_left ul li{
@@ -85,16 +91,197 @@ body{
     width: 35px;
     height: 35px;
     background: #fff;
-    color: #0bb5f4;
+    color: rgb(38 69 74);
     border-radius: 50%;
     margin-right: 10px;
     font-size: 16px;
     position: relative;
 }
 
-.resume .icon i{
+.fa-github:before{
+    color: rgb(94, 120, 124);
+}
+.fa-github:hover:before{
+    color: rgb(0, 0, 0);
+}
+#github_link{
+    color: rgb(38 69 74);
+}
+#github_link:hover{
+    color: rgba(190, 35, 35, 0.82);
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.resume .resume_left ul li .data{
+    color: rgb(38 69 74);
+}
+
+.resume .resume_left .resume_skills ul li{
+    color: rgb(38 69 74);
+    justify-content:flex-start;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name{
+    width: 25%;
+}
+
+.fa-html5:before {
+    color: orangered;
+}
+
+.fa-css3-alt:before {
+    color: blue;
+}
+
+.fa-js:before {
+    color: rgb(223, 223, 39);
+}
+
+.fa-react:before {
+    color: #18afc7;
+}
+
+.fa-linkedin-in:before {
+    color: rgb(38 69 74);
+}
+
+.fa-linkedin-in:hover:before{
+    color: rgb(0, 0, 255);
+}
+#linkedin_link{
+    color: rgb(38 69 74);
+}
+
+#linkedin_link:hover{
+    color: rgba(190, 35, 35, 0.82);
+}
+
+.fa-instagram:before{
+    color: rgb(38 69 74);
+    border-radius: 50%;
+}
+.fa-instagram:hover:before{
+    border-radius: 50%;
+    color: rgba(255, 0, 85, 0.849);
+}
+
+#instagram_link{
+    color: rgb(38 69 74);
+}
+
+#instagram_link:hover{
+    color: rgba(190, 35, 35, 0.82);
+}
+
+.resume .resume_right{
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+}
+
+.resume .resume_right .bold{
+    color: rgb(38 69 74);
+}
+
+.resume .resume_right .resume_education ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+#english_level{
+    color: rgb(38 69 74);
+}
+
+#english_level:hover{
+    color: rgba(190, 35, 35, 0.82);
+}
+
+.resume .resume_right ul li{
+    position: relative;
+}
+
+.resume .resume_right ul li .date{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info{
+    margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info{
+    margin-bottom: 0;
+}
+
+.resume .resume_right .resume_education ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid rgb(38 69 74);
+}
+
+.resume .resume_right .resume_education ul li::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+    background: rgb(38 69 74);
+}
+
+.resume .resume_right .resume_hobby ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(38 69 74);
+    border-radius: 50%;
+    position: relative;
+    color: rgb(38 69 74);
+}
+
+.resume .resume_right .resume_hobby ul li i{
+    font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -52px;
+    width: 50px;
+    height: 2px;
+    background: rgb(38 69 74);
+}
+
+.resume .resume_right .resume_hobby ul li:last-child::before{
+    display: none;
+}
+
+.fa-camera:before {
+    color: silver;
+}
+
+.fa-chess:before {
+    color: black;
+}
+
+.fa-basketball-ball:before {
+    color: brown;
 }
