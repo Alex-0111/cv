@@ -19,6 +19,7 @@ body{
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
+    margin-left: 10px;
 }
 
 .semi-bold{
@@ -26,6 +27,14 @@ body{
     font-size: 16px;
 }
 
+.code {
+    display: flex;
+    justify-content: center;
+}
+
+.code code{
+    justify-content: center;
+}
 .resume{
     width: 800px;
     height: auto;
@@ -113,6 +122,13 @@ body{
 
 .resume .icon i,
 .resume .resume_right .resume_hobby ul li i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.resume .resume_item .title i{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -232,7 +248,7 @@ body{
     border: 2px solid rgb(38 69 74);
 }
 
-.resume .resume_right .resume_education ul li::after{
+.resume .resume_right .resume_education ul li:after{
     content: "";
     position: absolute;
     top: 14px;
@@ -240,6 +256,14 @@ body{
     width: 2px;
     height: 115px;
     background: rgb(38 69 74);
+}
+
+#movie_db{
+    color: rgb(38 69 74);
+}
+
+#movie_db:hover{
+    color: rgba(190, 35, 35, 0.82);
 }
 
 .resume .resume_right .resume_hobby ul{
