@@ -62,6 +62,7 @@ body{
 }
 .resume .title{
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .resume .resume_left .bold{
@@ -209,6 +210,32 @@ body{
 .resume .resume_right .resume_education ul{
     padding-left: 40px;
     overflow: hidden;
+}
+
+.resume .resume_right .resume_education  ul.courses li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 55px;
+    background: rgb(38 69 74);
+}
+
+#js {
+    color: rgb(38 69 74);
+}
+
+#js:hover{
+    color: rgba(190, 35, 35, 0.82);
+}
+
+#html {
+    color: rgb(38 69 74);
+}
+
+#html:hover{
+    color: rgba(190, 35, 35, 0.82);
 }
 
 #english_level{
