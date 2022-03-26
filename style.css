@@ -30,6 +30,12 @@ body{
 .code {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+b .code{
+    padding-top: 20px;
 }
 
 .code code{
@@ -283,6 +289,14 @@ body{
     width: 2px;
     height: 115px;
     background: rgb(38 69 74);
+}
+
+#EF{
+    color: rgb(38 69 74);
+}
+
+#EF:hover{
+    color: rgba(190, 35, 35, 0.82);
 }
 
 #movie_db{
