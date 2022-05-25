@@ -19,7 +19,7 @@ body{
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .semi-bold{
@@ -152,7 +152,7 @@ b .code{
 }
 
 .resume .resume_left .resume_skills ul li .skill_name{
-    width: 25%;
+    width: 40%;
 }
 
 .fa-html5:before {
@@ -299,11 +299,11 @@ b .code{
     color: rgba(190, 35, 35, 0.82);
 }
 
-#movie_db{
+.project{
     color: rgb(38 69 74);
 }
 
-#movie_db:hover{
+.project:hover{
     color: rgba(190, 35, 35, 0.82);
 }
 
